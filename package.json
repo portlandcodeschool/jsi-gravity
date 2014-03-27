@@ -1,0 +1,21 @@
+{
+  "name": "jsi-gravity",
+  "version": "0.1.0",
+  "description": "Gravity challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "`npm bin`/mocha .globals.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wbyoung/jsi-gravity.git"
+  },
+  "author": "Whitney Young",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "jshint": "^2.4.4",
+    "chai": "^1.9.1"
+  },
+  "dependencies": {}
+}
