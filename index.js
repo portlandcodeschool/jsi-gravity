@@ -1,7 +1,13 @@
 // your function and tests should go in here
 
 var fallingTime = function(distance) {
-	return Math.sqrt((2*(distance)) / 9.81);	
+	var result;
+
+	if (distance <= 0) { result = NaN; }
+	else {
+		result = Math.sqrt((2*(distance)) / 9.81);
+		}
+		return result;	
 };
 
 
@@ -14,8 +20,8 @@ describe('fallingTime()', function() {
     expect(fallingTime(1)).to.be.closeTo(0.45, 0.01);
   });
 
-  it('reject negative numbers for a distance', function() {
-    expect(fallingTime(1)).to.be.closeTo(0.45, 0.01);
+  it('reject negative numbers or zero for a distance', function() {
+    expect(fallingTime(0)).to.eql(NaN);
   });
 
 
