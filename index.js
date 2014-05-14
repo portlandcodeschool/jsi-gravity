@@ -1,7 +1,13 @@
-// your function and tests should go in here
-
-describe('tests', function() {
-  it('needs real tests', function() {
-    expect(1).to.eql(1);
-  });
+var caculateTime = function (distance){
+	var base = (2 * distance / 9.81);
+	return Math.pow(base, 0.5);
+};
+describe('caculateTime()', function () {
+	it('caculates the time it takes for an object to fall 30 meters', function () {
+		expect(caculateTime(30)).to.be.closeTo(2.4731, 0.0001);
+	});
+	it('rejects a negative a distance.', function () {
+		expect(caculateTime(-30)).to.eql(NaN);
+	});
+	it('it returns a distance of 0.');
 });
