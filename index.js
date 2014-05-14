@@ -12,4 +12,7 @@ describe('calculate fall time', function() {
   it('rejects negative distance', function() {
   	expect(calculateFallTime(-1)).to.be.eql(NaN);
   });
+  it('rejects string inputs', function() {
+  	expect(calculateFallTime('blah')).to.be.eql(NaN);
+  });
 });
