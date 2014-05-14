@@ -9,7 +9,9 @@ describe('calculateTime()', function() {
 	it('calculates the time it takes for an object to fall 30 meters', function() {
 		expect(calculateTime(30)).to.be.closeTo(2.4731, 0.0001);
 	});
-	it('rejects a negative distance');
+	it('rejects a negative distance', function() {
+		expect(calculateTime(-30)).to.be.NaN;
+	});
 	it('rejects a distance of zero');
 	it('rejects a string');
 });
