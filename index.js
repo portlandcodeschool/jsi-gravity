@@ -7,7 +7,7 @@ describe('caculateTime()', function () {
 		expect(caculateTime(30)).to.be.closeTo(2.4731, 0.0001);
 	});
 	it('rejects a negative a distance.', function () {
-		expect(caculateTime(-30)).to.be(NaN);
+		expect(caculateTime(-30)).to.eql(NaN);
 	});
 	it('it returns a distance of 0.');
 });
