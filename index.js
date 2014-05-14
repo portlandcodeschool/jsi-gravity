@@ -13,5 +13,11 @@ describe('fallingTime()', function() {
   it('calculates how long it takes an object to fall from height of 1 meter', function() {
     expect(fallingTime(1)).to.be.closeTo(0.45, 0.01);
   });
+
+  it('reject negative numbers for a distance', function() {
+    expect(fallingTime(1)).to.be.closeTo(0.45, 0.01);
+  });
+
+
 });
 
