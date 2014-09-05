@@ -19,4 +19,3 @@ var distance = function(height) {
 };
 
 distance(10);
-
