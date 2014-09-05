@@ -4,6 +4,10 @@ describe('time falling', function() {
   it("calculates time for object to fall 10meters", function() {
     expect(distance(10)).to.eql(1.43);
   });
+
+  it("takes no numbers and not strings", function () {
+  	expect(distance("stringInput")).to.not.be.defined;
+  });
 });
 
 var distance = function(height) {
