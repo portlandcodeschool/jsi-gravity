@@ -9,6 +9,10 @@ describe('gravity function', function() {
   it('calculates the time it takes for an object to fall 10m', function() {
     expect(gravity(10)).to.eql(1.43);
   });
+
+  it('test that the output should be a number', function() {
+    expect(gravity("someString")).to.not.be.defined;
+  });
 });
 
 var gravity = function(distance) {
