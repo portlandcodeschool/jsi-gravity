@@ -4,7 +4,7 @@
   "description": "Gravity challenge",
   "main": "index.js",
   "scripts": {
-    "test": "`npm bin`/mocha .globals.js index.js"
+    "test": "`npm bin`/jasmine"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "author": "Whitney Young",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^1.18.2",
+    "jasmine": "^2.1",
     "jshint": "^2.4.4",
     "chai": "^1.9.1"
   },
